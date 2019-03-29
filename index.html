@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title></title>
+</head>
+<body>
+	<h1 id="title">Survey Form</h1>
+	<div class="main">
+		<p id="description">Let us know how we can improve freeCodeCamp</p>
+		<form id="survey-form" method="GET" action="https://freecodecamp.com" >
+			<div class="label-tab">
+				<label id="name-label" for="name">* Name:</label>
+			</div>
+			<div class="form-tab">
+				<input class="input-field" autofocus type="text" name="name" id="name" placeholder="Enter your name" required>
+			</div>
+			<div class="label-tab">
+				<label id="email-label" for="email">* Email:</label>
+			</div>
+			<div class="form-tab">
+				<input class="input-field" type="email" name="email" id="email" placeholder="Enter you Email" required>
+			</div>
+			<div class="label-tab">
+				<label id="age-label" for="age">* Age:</label>
+			</div>
+			<div class="form-tab">
+				<input class="input-field" type="number" name="age" id="number" placeholder="Age" required>
+			</div>
+			<div class="label-tab">
+				<label id="role-label" for="role">Which option best describes your current role?</label>
+			</div>
+			<div class="form-tab">
+				<select class="dropdown">
+					<option>Student</option>
+					<option>Full Time Job</option>
+					<option>Full Time Learner</option>
+					<option>Prefer not to say</option>
+					<option>Other</option>
+				</select>
+			</div>
+			<div class="label-tab">
+				<label>* How likely is that you would recommend freeCodeCamp to a friend</label>
+			</div>
+			<div class="form-tab">
+				<ul style="list-style:none;">
+					<li class="radio">
+						<label>Definitely<input type="radio" class="userRatings" name="likelyhood" value="1" required></label>
+					</li>
+					<li class="radio">
+						<label>Definitely<input type="radio" class="userRatings" name="likelyhood" value="2" required></label>
+					</li>
+					<li class="radio">
+						<label>Definitely<input type="radio" class="userRatings" name="likelyhood" value="3" required></label>
+					</li>
+				</ul>
+			</div>
+			<div class="label-tab">
+				<label>What do you like most in FCC:</label>
+			</div>
+			<div class="form-tab">
+				<select class="dropdown">
+					<option disabled selected value>Select an option</option>
+					<option>Challenges</option>
+					<option>Projects</option>
+					<option>Communities</option>
+					<option>Open Source</option>
+				</select>
+			</div>
+			<div class="label-tab">
+				<label>Things that should be improved in the future</label>
+				<label>(Check all that apply):</label>
+			</div>
+			<div class="form-tab">
+				<ul style="list-style: none;">
+					<li class="checkbox">
+						<label><input type="checkbox" name="improvement">Front-end Projects</label>
+					</li>
+					<li class="checkbox">
+						<label><input type="checkbox" name="improvement">Back-end Projects</label>
+					</li>
+					<li class="checkbox">
+						<label><input type="checkbox" name="improvement">Data Visualization</label>
+					</li>
+					<li class="checkbox">
+						<label><input type="checkbox" name="improvement">Challenges</label>
+					</li>
+					<li class="checkbox">
+						<label><input type="checkbox" name="improvement">Open Source Community</label>
+					</li>
+				</ul>
+			</div>
+			<div class="label-tab">
+				<label>Any Comments or Suggestions?</label>
+			</div>
+			<div class="form-tab">
+				<textarea style="height: 50px; resize: vertical" class="input-field" placeholder="Enter your comment here..."></textarea>
+			</div>
+			<button>Submit</button>
+		</form>
+	</div>
+</body>
+</html>

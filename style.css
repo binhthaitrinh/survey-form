@@ -1,0 +1,107 @@
+* {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+  	font-family: Asap, sans-serif;
+}
+
+body {
+	background-color: #A8D6D0;
+	text-align: center;
+	
+}
+
+#title {
+	margin-top: 20px;
+}
+
+.main {
+	background-color: white;
+	padding: 30px;
+	border-radius: 5px;
+	border: 1px solid white;
+	width: 75%;
+	margin: 20px auto;
+	max-width: 900px;
+}
+
+#description {
+	padding-bottom: 20px;
+	margin-top: 10px;
+}
+
+
+
+.label-tab {
+	text-align: right;
+	width: 40%;
+	display: inline-block;
+	vertical-align: top;
+	padding: 5px;
+	margin-top: 10px;
+}
+
+.form-tab {
+	display: inline-block;
+	width: 48%;
+	text-align: left;
+	vertical-align: middle;
+}
+
+.input-field {
+	height: 30px;
+	width: 280px;
+	padding: 5px;
+	margin: 10px;
+	border: 1px solid #c0c0c0;
+	border-radius: 2px;
+}
+
+.radio, .checkbox {
+	display: block;
+	position: relative;
+	margin-left: 10px;
+	padding-bottom: 10px;
+}
+
+.userRatings, input[type="checkbox"] {
+	float: left;
+	margin-right: 10px;
+}
+
+ul {
+	margin-top: 20px;
+}
+
+.dropdown {
+	height: 30px;
+	width: 140px;
+	padding: 5px;
+	margin: 10px;
+	margin-top: 15px;
+	border: 1px solid #c0c0c0;
+}
+
+button {
+	width: 100px;
+	background-color: #59ace0;
+	height: 35px;
+	color: white;
+	font-size: 1em;
+	margin: 10px auto;
+	border-radius: 4px;
+	border: 0px solid;
+	display: block;
+}
+
+@media screen and (max-width: 780px) {
+	.form-tab {
+		width: 80%;
+		float: left;
+	}
+	.label-tab {
+		width: 100%;
+		text-align: left;
+	}
+}
+
